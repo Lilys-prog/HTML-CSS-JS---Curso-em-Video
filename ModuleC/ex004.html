@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">  
+  <title>Primeiros passos com DOM</title>
+
+  <style>
+    body {
+      background: black;
+      color: rgb(163, 16, 196);
+      font: normal 18pt Arial;
+    }
+  </style>
+
+</head>
+<body>
+  
+<h1>Iniciando estudos com DOM</h1>
+<p>Aprendendo a usar o <strong>DOM</strong> em JS</p>
+<p>Aqui vai o resultado</p>
+<br/>
+<div id="msg">Clique em mim!</div>
+
+<script>
+  document.write('Hello, world!<br/>');
+  document.write(document.charset + '<br/>');
+
+  var p1 = document.getElementsByTagName('p')[0];
+
+  document.write('Está escrito: ' + p1.innerText)  
+  p1.style.color = 'pink';
+
+  var corpo = document.body;
+  corpo.style.background = 'yellow';
+
+  var d = document.getElementById('msg');
+  d.style.background = 'green';
+  d.style.width = '300pt';
+  d.innerText = 'Olá!'
+  // se for 'getElements', ou seja, está-se acessando o documento por algo no plural, coloca-se entre colchetes qual deles se quer, definindo a partir do 0, como arrays e strings. Ex: getElementsByTag('p')[0] <- desta forma se sabe que é o primeiro parágrafo.
+
+  // quando se usar o querySelector() - para um - ou o querySelectorAll() - para vários - valem as mesmas regras de estabelecer posição, quando for o plural e além disso, se for por id usa-se '#' (por exemplo 'div#msg') ou para classe o '.' (ex: 'div.msg').
+
+  
+</script>
+
+</body>
+</html>
