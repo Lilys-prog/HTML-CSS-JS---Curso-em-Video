@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos DOM</title>
+
+<style>
+  div#area {
+    font: normal 20pt Arial;
+    background: rgb(81, 131, 6);
+    color: white;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+  }
+</style>
+
+</head>
+<body>
+
+  <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="
+  sair()">Interaja</div>
+
+  <!-- quando o click ocorrer, ele vai chamar a função 'clicar()', definida na área do JS -->
+
+  <!-- os eventos DOM servem para que o JS acesse elementos do HTML e atribua propriedades ou até mesmo crie novos elementos. -->
+
+<script>
+
+  /* o Evento é tudo aquilo que pode acontecer com o elemento selecionado no html. Neste caso, a <div>.*/
+
+  /* Funções em JS são um conjunto de códigos que só serão executados quando um evento ocorrer.
+  Teremos blocos que só serão executados ao disparo do evento (a interatividade do site ocorre assim) e outros que serão disparados assim que a página carregar. */
+
+                    /* Function ação (parâmetros) {
+                        // bloco de código
+                    } */
+
+
+let a = document.getElementById('area');
+function clicar() {  
+  a.innerText = 'Clicou';
+  a.style.background = 'red';
+}
+
+function entrar() {
+  a.innerText = 'Entrou';
+}
+
+function sair() {
+  a.innerText = 'Saiu';
+  a.style.background = 'rgb(81, 131, 6)';
+}
+
+</script>
+
+</body>
+</html>
