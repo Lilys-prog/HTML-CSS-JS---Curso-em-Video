@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"> 
+  <title>Brasileiro ou Estrangeiro?</title>
+</head>
+<body>
+
+  <h1>Checando Nacionalidade</h1>
+  País de origem: <input type="text" name="txtpais" id="txtpais">
+  <input type="button" value="Verificar" onclick="nacionalidade()">
+  <div id="res"></div>
+  
+  <script>
+
+    function nacionalidade() {   
+      let pais = document.getElementById('txtpais');
+      let result = document.getElementById('res');
+      if (pais.value === 'Brasil') {
+        result.innerText = 'Brasileiro';
+      } else {
+        result.innerText = 'Estrangeiro';
+      }               
+    }
+// sem o '.value' não funcionava de jeito nenhhum. Acredito que quando é <input> seja obrigatório
+
+
+  </script>
+
+</body>
+</html>
