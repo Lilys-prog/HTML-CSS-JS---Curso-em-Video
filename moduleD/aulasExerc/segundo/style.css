@@ -9,12 +9,23 @@ header {
 }
 
 section {
-  background: white;
+  background: whitesmoke;
   border-radius: 10px;
   padding: 15px;
   width: 500px;
   margin: auto;
   box-shadow: 5px 5px 10px black;
+}
+
+div {
+  margin-top: 20pt;
+  margin: center;
+}
+
+#btn {
+  padding: 5pt;
+  font-size: 15pt;
+  border-radius: 5px;  
 }
 
 footer {
