@@ -20,6 +20,7 @@ section {
 #linha1 {
   display: flex;
   margin: 20px;
+  margin-bottom: -10px;  
   justify-content: center;
   align-items: center;
 }
@@ -27,10 +28,11 @@ section {
 #btn {
   margin-left: 20px;
   height: 30px;
+  font-size: 1em;
 }
 
-#tabuada {
-  margin-top: 20px;
+#tabuada { 
+  margin: 20px 30px ;
   height: 200px;
 }
 
