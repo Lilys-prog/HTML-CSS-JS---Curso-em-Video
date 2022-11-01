@@ -18,6 +18,10 @@ section {
   background-color: white;
 }
 
+#analise {
+  height: auto;
+}
+
 #linha1 {
   display: flex;
   padding: 10px;
@@ -26,15 +30,26 @@ section {
 }
 
 #txtadd {
-  padding: 70px;
+  padding: 30px;  
   margin-top: 80px;
   margin-left: -70px;
+  width: 150px;   
+}
+
+option {
+  margin: -5px -25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 #btnF {
   margin: -250px -70px;
 }
 
+p {
+  width: 400px;
+  padding: 0;
+}
 
 footer {
   text-align: center;
